@@ -6,14 +6,19 @@ export default function Nav() {
         display: "flex",
         flexWrap: "wrap",
         zIndex: "5",
-        backgroundColor: "rgb(44,43,43,60%)",
         width: "100%",
-        height: "80px",
+        height: "auto",
+        backgroundColor: "rgb(50,31,24,45%)",
+        backdropFilter: "blur(8px)",
       }}
     >
+      <div style={{ marginLeft: "5%" }}>
+        <img src="./logo.svg" style={{ scale: "0.7" }} />
+      </div>
       <a
         href=""
         style={{
+          fontSize: "24px",
           color: "white",
           marginRight: "10%",
           marginLeft: "40%",
@@ -25,6 +30,7 @@ export default function Nav() {
       <a
         href=""
         style={{
+          fontSize: "24px",
           color: "white",
           marginTop: "2%",
           marginRight: "10%",
@@ -36,6 +42,7 @@ export default function Nav() {
       <a
         href=""
         style={{
+          fontSize: "24px",
           color: "white",
           marginTop: "2%",
           marginRight: "10%",

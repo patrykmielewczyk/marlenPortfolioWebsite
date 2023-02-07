@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
 import Section from "./section";
 import Section2 from "./section2";
 import Section3 from "./section3";
@@ -17,8 +17,8 @@ export default function Home() {
           position: "absolute",
           marginLeft: "10%",
           marginTop: "10%",
-          maxWidth: "60%",
-          fontSize: "8rem",
+          maxWidth: "50%",
+          fontSize: "7rem",
           color: "white",
           zIndex: "100",
         }}
@@ -36,6 +36,7 @@ export default function Home() {
           MozBoxShadow: "1px 1px 40px 5px rgba(64, 42, 34, 1)",
           boxShadow: "1px 1px 40px 5px rgba(64, 42, 34, 1)",
           scale,
+          filter: "brightness(70%)",
           position: "fixed",
         }}
       >

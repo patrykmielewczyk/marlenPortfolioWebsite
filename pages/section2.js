@@ -51,6 +51,9 @@ export default function Section2() {
                 cursor: "pointer",
               }}
             />
+            <h1 style={{ color: "white", marginLeft: "3rem" }}>
+              Sesje Dziecięce
+            </h1>
           </a>
         </motion.div>
         <motion.div
@@ -74,6 +77,7 @@ export default function Section2() {
               cursor: "pointer",
             }}
           />
+          <h1 style={{ color: "white", marginLeft: "4rem" }}>Sesje Kobiece</h1>
         </motion.div>
         <motion.div
           style={{
@@ -95,6 +99,7 @@ export default function Section2() {
               cursor: "pointer",
             }}
           />
+          <h1 style={{ color: "white", marginLeft: "7rem" }}>Sesje Par</h1>
         </motion.div>
       </div>
     </>
