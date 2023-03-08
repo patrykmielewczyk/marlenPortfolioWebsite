@@ -19,6 +19,7 @@ export default function Home() {
           marginTop: "10%",
           maxWidth: "50%",
           fontSize: "7rem",
+          fontWeight: "100",
           color: "white",
           zIndex: "100",
         }}
