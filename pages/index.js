@@ -3,6 +3,7 @@ import Section from "./section";
 import Section2 from "./section2";
 import Section3 from "./section3";
 import Nav from "../components/Nav/Nav";
+import react from "react";
 
 export default function Home() {
   let { scrollY } = useScroll({
@@ -25,10 +26,7 @@ export default function Home() {
         }}
       >
         My photographer portfolio website
-        <img
-          src="./arrow.svg"
-          style={{ marginLeft: "90%", marginTop: "10%" }}
-        />
+        <img src="./arrow.svg" style={{ marginTop: "10%" }} />
       </div>
       <motion.div
         style={{

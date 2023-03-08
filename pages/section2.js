@@ -5,7 +5,7 @@ export default function Section2() {
   let { scrollYProgress } = useScroll({
     offset: ["start start", "end start"],
   });
-  let y = useTransform(scrollYProgress, [0, 1], ["-20", "35%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["-20", "50%"]);
   return (
     <>
       <div
@@ -101,13 +101,35 @@ export default function Section2() {
             style={{ width: "100%", height: "44vh" }}
           />
         </motion.div>
+        <div
+          style={{
+            position: "absolute",
+            width: "30vw",
+            marginTop: "135rem",
+            marginLeft: "8%",
+            color: "white",
+          }}
+        >
+          <p
+            style={{
+              fontWeight: "300",
+              fontSize: "300%",
+              position: "relative",
+            }}
+          >
+            Sesje dziecięce
+          </p>
+          <p style={{ fontWeight: "100", position: "relative" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
         <motion.div
           style={{
             y,
-            marginTop: "2.5%",
             marginLeft: "8%",
-            position: "relative",
-
+            position: "absolute",
+            marginTop: "75%",
             maxHeight: "100vh",
           }}
         >
@@ -120,10 +142,9 @@ export default function Section2() {
         <motion.div
           style={{
             y,
-            marginTop: "2.5%",
-            marginLeft: "2%",
-            position: "relative",
-
+            marginTop: "75%",
+            marginLeft: "37.5%",
+            position: "absolute",
             maxHeight: "100vh",
           }}
         >
@@ -136,10 +157,9 @@ export default function Section2() {
         <motion.div
           style={{
             y,
-            marginTop: "2.5%",
-            marginLeft: "2%",
-            position: "relative",
-
+            marginTop: "75%",
+            marginLeft: "65%",
+            position: "absolute",
             maxHeight: "100vh",
           }}
         >
