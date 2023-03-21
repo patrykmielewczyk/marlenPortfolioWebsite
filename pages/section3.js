@@ -11,7 +11,7 @@ export default function Section3() {
           zIndex: "1",
           display: "flex",
           height: "100vh",
-          width: "100vw",
+          width: "95vw",
           backgroundColor: "#A66D58",
           position: "absolute",
         }}

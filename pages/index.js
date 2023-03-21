@@ -39,19 +39,7 @@ export default function Home() {
           filter: "brightness(70%)",
           position: "fixed",
         }}
-      >
-        <img
-          alt="bg"
-          src="/background.jpg"
-          style={{
-            zIndex: "-1",
-            top: "0",
-            width: "100vw",
-            height: "100vh",
-            objectFit: "cover",
-          }}
-        />
-      </motion.div>
+      ></motion.div>
       <Section />
       <Section2 />
       <Section3 />
