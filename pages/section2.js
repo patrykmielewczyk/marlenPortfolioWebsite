@@ -17,7 +17,6 @@ export default function Section2() {
           height: "400vh",
           backgroundColor: "#402A22",
           zIndex: "1",
-          maxWidth: "100vw",
         }}
       >
         <h1
