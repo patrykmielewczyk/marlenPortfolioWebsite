@@ -54,7 +54,7 @@ export default function Section3() {
             height: "auto",
             position: "absolute",
             marginLeft: "65rem",
-            marginTop: "4rem",
+            marginTop: "6rem",
           }}
         >
           <img

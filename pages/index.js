@@ -2,6 +2,7 @@ import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
 import Section from "./section";
 import Section2 from "./section2";
 import Section3 from "./section3";
+import Section4 from "./section4";
 import Nav from "../components/Nav/Nav";
 import react from "react";
 

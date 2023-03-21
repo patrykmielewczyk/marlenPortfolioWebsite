@@ -5,7 +5,7 @@ export default function Section2() {
   let { scrollYProgress } = useScroll({
     offset: ["start start", "end start"],
   });
-  let y = useTransform(scrollYProgress, [0, 1], ["-20", "50%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["-25%", "55%"]);
   return (
     <>
       <div
@@ -17,6 +17,7 @@ export default function Section2() {
           height: "400vh",
           backgroundColor: "#402A22",
           zIndex: "1",
+          maxWidth: "100vw",
         }}
       >
         <h1
@@ -35,7 +36,7 @@ export default function Section2() {
           style={{
             position: "absolute",
             width: "30vw",
-            marginTop: "50%",
+            marginTop: "45%",
             marginLeft: "40%",
             color: "white",
           }}
@@ -59,7 +60,7 @@ export default function Section2() {
             y,
             marginTop: "17%",
             position: "relative",
-            marginLeft: "2%",
+            marginLeft: "3%",
             maxHeight: "100vh",
           }}
         >
@@ -105,7 +106,7 @@ export default function Section2() {
           style={{
             position: "absolute",
             width: "30vw",
-            marginTop: "135rem",
+            marginTop: "137rem",
             marginLeft: "8%",
             color: "white",
           }}
@@ -169,6 +170,74 @@ export default function Section2() {
             style={{ width: "100%", height: "70vh" }}
           />
         </motion.div>
+        <motion.div
+          style={{
+            y,
+            marginTop: "133%",
+            marginLeft: "5%",
+            position: "absolute",
+            maxHeight: "100vh",
+          }}
+        >
+          <img
+            src="./couples2.jpg"
+            alt="1"
+            style={{ width: "100%", height: "70vh" }}
+          />
+        </motion.div>
+        <motion.div
+          style={{
+            y,
+            marginTop: "135.5%",
+            marginLeft: "31%",
+            position: "absolute",
+            maxHeight: "100vh",
+          }}
+        >
+          <img
+            src="./couples3.jpg"
+            alt="1"
+            style={{ width: "100%", height: "50vh" }}
+          />
+        </motion.div>
+        <motion.div
+          style={{
+            y,
+            marginTop: "134.5%",
+            marginLeft: "49%",
+            position: "absolute",
+            maxHeight: "100vh",
+          }}
+        >
+          <img
+            src="./couples1.jpg"
+            alt="1"
+            style={{ width: "100%", height: "60vh" }}
+          />
+        </motion.div>
+        <div
+          style={{
+            position: "absolute",
+            width: "30vw",
+            marginTop: "200rem",
+            marginLeft: "30%",
+            color: "white",
+          }}
+        >
+          <p
+            style={{
+              fontWeight: "300",
+              fontSize: "300%",
+              position: "relative",
+            }}
+          >
+            Sesje par
+          </p>
+          <p style={{ fontWeight: "100", position: "relative" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
       </div>
     </>
   );
