@@ -1,4 +1,6 @@
 import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import styles from "./index.module.css";
 import Section from "./section";
 import Section2 from "./section2";
 import Section3 from "./section3";
@@ -14,43 +16,12 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <div
-        style={{
-          position: "absolute",
-          marginLeft: "10%",
-          marginTop: "10%",
-          maxWidth: "50%",
-          fontSize: "7rem",
-          fontWeight: "100",
-          color: "white",
-          zIndex: "100",
-        }}
-      >
+      <div className={styles.heroTextContainer}>
         My photographer portfolio website
-        <img src="./arrow.svg" style={{ marginTop: "10%" }} />
+        <Image src="/arrow.svg" alt="arrow" width={100} height={100} />
       </div>
-      <motion.div
-        style={{
-          top: "0",
-          WebkitBoxShadow: "1px 1px 40px 5px rgba(64, 42, 34, 1)",
-          MozBoxShadow: "1px 1px 40px 5px rgba(64, 42, 34, 1)",
-          boxShadow: "1px 1px 40px 5px rgba(64, 42, 34, 1)",
-          scale,
-          filter: "brightness(70%)",
-          position: "fixed",
-        }}
-      >
-        <img
-          alt="bg"
-          src="/background.jpg"
-          style={{
-            zIndex: "-1",
-            top: "0",
-            width: "100vw",
-            height: "100vh",
-            objectFit: "cover",
-          }}
-        />
+      <motion.div style={{ scale }} className={styles.heroImageContainer}>
+        <img alt="bg" src="/background.jpg" className={styles.heroImage} />
       </motion.div>
       <Section />
       <Section2 />

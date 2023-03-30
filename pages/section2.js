@@ -1,111 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import styles from "./section2.module.css";
+import classNames from "classnames";
 
 export default function Section2() {
-  let { scrollYProgress } = useScroll({
-    offset: ["start start", "end start"],
-  });
-  let y = useTransform(scrollYProgress, [0, 1], ["-25%", "55%"]);
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          paddingTop: "0",
-          position: "relative",
-          height: "400vh",
-          backgroundColor: "#402A22",
-          zIndex: "1",
-        }}
-      >
-        <h1
-          style={{
-            marginLeft: "50%",
-            fontWeight: "100",
-            position: "absolute",
-            color: "white",
-            paddingTop: "0.5%",
-            fontSize: "10rem",
-          }}
-        >
-          Portfolio
-        </h1>
-        <div
-          style={{
-            position: "absolute",
-            width: "30vw",
-            marginTop: "45%",
-            marginLeft: "40%",
-            color: "white",
-          }}
-        >
-          <p
-            style={{
-              fontWeight: "300",
-              fontSize: "300%",
-              position: "relative",
-            }}
-          >
-            Sesje kobiece
-          </p>
+      <div className={styles.sectionContainer}>
+        <h1 className={styles.sectionHeader}>Portfolio</h1>
+        <div className={styles.textContainer}>
+          <h1>Sesje kobiece</h1>
           <p style={{ fontWeight: "100", position: "relative" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <motion.div
-          style={{
-            y,
-            marginTop: "17%",
-            position: "relative",
-            marginLeft: "3%",
-            maxHeight: "100vh",
-          }}
-        >
-          <img
-            src="./woman.jpg"
-            alt="2"
-            style={{ width: "100%", height: "90vh" }}
-          />
-        </motion.div>
-        <motion.div
-          style={{
-            y,
-            marginTop: "17%",
-            marginLeft: "4%",
-            position: "relative",
-
-            maxHeight: "100vh",
-          }}
-        >
-          <img
-            src="./woman2.jpg"
-            alt="1"
-            style={{ width: "100%", height: "60vh" }}
-          />
-        </motion.div>
-        <motion.div
-          style={{
-            y,
-            marginTop: "17%",
-            marginLeft: "4%",
-            position: "relative",
-
-            maxHeight: "100vh",
-          }}
-        >
-          <img
-            src="./woman3.jpg"
-            alt="1"
-            style={{ width: "100%", height: "44vh" }}
-          />
-        </motion.div>
+        <div className={styles.womanImg} id={styles.woman1}>
+          <Image src="/woman.jpg" alt="1" fill cover />
+        </div>
+        <div className={styles.womanImg} id={styles.woman2}>
+          <Image src="/woman3.jpg" alt="1" fill cover />
+        </div>
+        <div className={styles.womanImg} id={styles.woman3}>
+          <Image src="/woman2.jpg" alt="1" fill cover />
+        </div>
         <div
           style={{
             position: "absolute",
             width: "30vw",
-            marginTop: "137rem",
+            marginTop: "125rem",
             marginLeft: "8%",
             color: "white",
           }}
@@ -124,101 +48,80 @@ export default function Section2() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <motion.div
+        <div
           style={{
-            y,
             marginLeft: "8%",
             position: "absolute",
-            marginTop: "75%",
+            marginTop: "70%",
             maxHeight: "100vh",
+            height: "70vh",
+            width: "25vw",
           }}
         >
-          <img
-            src="./kid3.jpg"
-            alt="1"
-            style={{ width: "100%", height: "70vh" }}
-          />
-        </motion.div>
-        <motion.div
+          <Image src="/kid3.jpg" alt="1" fill cover />
+        </div>
+        <div
           style={{
-            y,
-            marginTop: "75%",
-            marginLeft: "37.5%",
+            marginTop: "70%",
+            marginLeft: "36.5%",
             position: "absolute",
             maxHeight: "100vh",
+            height: "70vh",
+            width: "25vw",
           }}
         >
-          <img
-            src="./kid1.jpg"
-            alt="2"
-            style={{ width: "100%", height: "70vh" }}
-          />
-        </motion.div>
-        <motion.div
+          <Image src="/kid1.jpg" alt="1" fill cover />
+        </div>
+        <div
           style={{
-            y,
-            marginTop: "75%",
+            marginTop: "70%",
             marginLeft: "65%",
             position: "absolute",
             maxHeight: "100vh",
+            height: "70vh",
+            width: "25vw",
           }}
         >
-          <img
-            src="./kid2.jpg"
-            alt="1"
-            style={{ width: "100%", height: "70vh" }}
-          />
-        </motion.div>
-        <motion.div
+          <Image src="/kid2.jpg" alt="1" fill cover />
+        </div>
+        <div
           style={{
-            y,
-            marginTop: "133%",
-            marginLeft: "5%",
+            marginTop: "135%",
+            marginLeft: "6%",
             position: "absolute",
-            maxHeight: "100vh",
+            height: "50vh",
+            width: "20vw",
           }}
         >
-          <img
-            src="./couples2.jpg"
-            alt="1"
-            style={{ width: "100%", height: "70vh" }}
-          />
-        </motion.div>
-        <motion.div
+          <Image src="/couples2.jpg" alt="1" fill cover />
+        </div>
+        <div
           style={{
-            y,
-            marginTop: "135.5%",
-            marginLeft: "31%",
+            marginTop: "135%",
+            marginLeft: "30%",
             position: "absolute",
-            maxHeight: "100vh",
+            height: "55vh",
+            width: "18vw",
           }}
         >
-          <img
-            src="./couples3.jpg"
-            alt="1"
-            style={{ width: "100%", height: "50vh" }}
-          />
-        </motion.div>
-        <motion.div
+          <Image src="/couples3.jpg" alt="1" fill cover />
+        </div>
+        <div
           style={{
-            y,
-            marginTop: "134.5%",
-            marginLeft: "49%",
+            marginTop: "135%",
+            marginLeft: "54%",
             position: "absolute",
-            maxHeight: "100vh",
+            height: "50vh",
+            width: "40vw",
           }}
         >
-          <img
-            src="./couples1.jpg"
-            alt="1"
-            style={{ width: "100%", height: "60vh" }}
-          />
-        </motion.div>
+          <Image src="/couples1.jpg" alt="1" fill cover />
+        </div>
         <div
           style={{
             position: "absolute",
             width: "30vw",
-            marginTop: "200rem",
+            marginTop: "163%",
             marginLeft: "30%",
             color: "white",
           }}

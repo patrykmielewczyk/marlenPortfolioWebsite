@@ -1,0 +1,23 @@
+.heroTextContainer{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    max-width: 50%;
+    font-size: 7rem;
+    font-weight: 100;
+    color: white;
+    z-index: 100;
+}
+.heroImageContainer{
+    filter: brightness(70%);
+    position: fixed;
+}
+.heroImage {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    -webkit-box-shadow: 1px 1px 40px 5px rgba(64, 42, 34, 1);
+    -moz-box-shadow: 1px 1px 40px 5px rgba(64, 42, 34, 1);
+    box-shadow: 1px 1px 40px 5px rgba(64, 42, 34, 1);
+}
