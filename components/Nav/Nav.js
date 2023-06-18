@@ -1,19 +1,9 @@
+import styles from "./Nav.module.css";
 export default function Nav() {
   return (
-    <nav
-      style={{
-        position: "fixed",
-        display: "flex",
-        flexWrap: "wrap",
-        zIndex: "5",
-        width: "100%",
-        height: "auto",
-        backgroundColor: "rgb(50,31,24,45%)",
-        backdropFilter: "blur(8px)",
-      }}
-    >
-      <div style={{ marginLeft: "5%" }}>
-        <img src="./logo.svg" style={{ scale: "0.7" }} />
+    <nav className={styles.wrapper}>
+      <div className={styles.logoWrapper}>
+        <img src="./logo.svg" />
       </div>
       <a
         href=""
@@ -22,7 +12,7 @@ export default function Nav() {
           color: "white",
           marginRight: "10%",
           marginLeft: "40%",
-          marginTop: "2%",
+          marginTop: "3%",
         }}
       >
         Home
@@ -32,7 +22,7 @@ export default function Nav() {
         style={{
           fontSize: "24px",
           color: "white",
-          marginTop: "2%",
+          marginTop: "3%",
           marginRight: "10%",
         }}
       >
@@ -44,7 +34,7 @@ export default function Nav() {
         style={{
           fontSize: "24px",
           color: "white",
-          marginTop: "2%",
+          marginTop: "3%",
           marginRight: "10%",
         }}
       >

@@ -6,7 +6,7 @@ body {
   background-color: #a66d58;
   padding: 0;
   margin: 0;
-  font-family: montserrat;
+  font-family: voyage;
 }
 
 a {
@@ -14,17 +14,16 @@ a {
   text-decoration: none;
 }
 h1{
-  font-family: montserrat;
   cursor: default;
 }
 
 p {
   cursor: default;
   font-size: 24px;
-font-family: montserrat;
 }
 
 * {
   box-sizing: border-box;
 }
+/* ************************************** */
 
