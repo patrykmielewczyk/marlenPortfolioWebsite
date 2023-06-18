@@ -13,11 +13,11 @@ const HomeSection = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-      smoother.current = ScrollSmoother.create({
+      gsap.registerPlugin(ScrollTrigger);
+      /*smoother.current = ScrollSmoother.create({
         smooth: 1.5,
         effects: true,
-      });
+      });*/
       gsap.fromTo(
         revealText.current,
         { autoAlpha: 0 },
