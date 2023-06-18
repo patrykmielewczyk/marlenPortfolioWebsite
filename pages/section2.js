@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import styles from "./section2.module.css";
+import styles from "./Section2.module.css";
 import classNames from "classnames";
 
 export default function Section2() {
